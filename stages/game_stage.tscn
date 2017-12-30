@@ -6,6 +6,7 @@
 
 [node name="Sprite" type="Sprite" parent="."]
 
+transform/pos = Vector2( 0, 0.59874 )
 texture = ExtResource( 1 )
 centered = false
 
