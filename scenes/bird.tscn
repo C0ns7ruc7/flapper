@@ -92,7 +92,7 @@ tracks/1/keys = {
 
 [node name="bird" type="RigidBody2D"]
 
-transform/pos = Vector2( 36, 52.339 )
+transform/pos = Vector2( 36, 120 )
 input/pickable = false
 shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -106,8 +106,8 @@ bounce = 0.0
 gravity_scale = 5.0
 custom_integrator = false
 continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
+contacts_reported = 1
+contact_monitor = true
 sleeping = false
 can_sleep = true
 velocity/linear = Vector2( 0, 0 )
