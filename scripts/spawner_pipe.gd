@@ -10,6 +10,9 @@ const OFFSET_Y      = 55
 const AMOUNT_TO_FILL_VIEW = 3
 
 func _ready():
+	pass
+
+func start():
 	go_init_pos()
 	
 	for i in range(AMOUNT_TO_FILL_VIEW):
