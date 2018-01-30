@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=10 format=1]
 
 [ext_resource path="res://scenes/bird.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/camera.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/background.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/spawner_pipe.tscn" type="PackedScene" id=5]
 [ext_resource path="res://sprites/instructions.png" type="Texture" id=6]
+[ext_resource path="res://fonts/font.ttf" type="DynamicFontData" id=7]
 
 [sub_resource type="GDScript" id=1]
 
@@ -26,6 +27,13 @@ func _on_pressed():
 	
 	hide()
 	pass"
+
+[sub_resource type="DynamicFont" id=2]
+
+font/size = 30
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 7 )
 
 [node name="world" type="Node"]
 
@@ -95,5 +103,23 @@ margin/right = 103.0
 margin/bottom = 153.0
 texture = ExtResource( 6 )
 stretch_mode = 0
+
+[node name="score" type="Label" parent="hud"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 10.0
+margin/right = 144.0
+margin/bottom = 27.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "0"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
 
 

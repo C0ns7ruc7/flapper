@@ -17,6 +17,7 @@ func _ready():
 	set_process_input(true)
 	set_fixed_process(true)
 	
+	add_to_group(game.GROUP_BIRDS)
 	connect("body_enter", self, "_on_body_enter")
 	pass
 
